@@ -10,6 +10,10 @@ This is a project that offers basic information about train lines, stations and 
 - Users can choose the specific station and time and get the next train service for each line at a station immediately after a user-specified time
 - Users can choose the start station, destination station and time and get the train service time for their trips(direct or exchange)
 
+## Demo
+![demo1](https://github.com/erinchocolate/wellington-train-helper/blob/master/Demo1.gif)
+![demo2](https://github.com/erinchocolate/wellington-train-helper/blob/master/Demo2.gif)
+
 ## Built with
 
 - Java
