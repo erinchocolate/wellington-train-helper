@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" stylesheets="@../css/TimeScene.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TrainLineSceneController">
+   <children>
+      <Pane layoutX="208.0" layoutY="1.0" prefHeight="602.0" prefWidth="743.0" style="-fx-background-color: #2F2B43;">
+         <children>
+            <TableView fx:id="tableView" layoutX="82.0" layoutY="372.0" prefHeight="200.0" prefWidth="531.0">
+              <columns>
+                <TableColumn fx:id="serviceColumn" prefWidth="278.28570556640625" text="Service Name" />
+                <TableColumn fx:id="startTimeColumn" prefWidth="99.42852783203125" text="Start Time" />
+                  <TableColumn fx:id="arriveTimeColumn" prefWidth="125.1429443359375" text="Arrive Time" />
+              </columns>
+            </TableView>
+            <ListView fx:id="listView" layoutX="82.0" layoutY="132.0" prefHeight="190.0" prefWidth="413.0" />
+            <Label fx:id="title" layoutX="82.0" layoutY="32.0" text="Train line" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="90.0" text="Stations" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="337.0" text="Services" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="-1.0" prefHeight="600.0" prefWidth="207.0" style="-fx-background-color: #393351;">
+         <children>
+            <VBox layoutY="166.0" prefHeight="435.0" prefWidth="207.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterTripScene" prefHeight="61.0" prefWidth="207.0" styleClass="button1" stylesheets="@../css/homeScene.css" text="Plan Trip" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/idea.png" />
+                           </image>
+                           <rotationAxis>
+                              <Point3D z="10.0" />
+                           </rotationAxis>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterTimeScene" prefHeight="61.0" prefWidth="207.0" styleClass="button1" stylesheets="@../css/homeScene.css" text="Check Time" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/clock.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterMainScene" prefHeight="61.0" prefWidth="207.0" styleClass="button1" stylesheets="@../css/homeScene.css" text="Check Info" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/map.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="26.0" layoutY="66.0" text="Wellington" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="102.0" text="Train Helper " textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="26.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/train.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

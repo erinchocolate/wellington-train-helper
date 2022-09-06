@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeSceneController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="207.0" style="-fx-background-color: #393351;">
+         <children>
+            <VBox layoutY="166.0" prefHeight="435.0" prefWidth="207.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterTripScene" prefHeight="61.0" prefWidth="207.0" styleClass="button1" stylesheets="@../css/homeScene.css" text="Plan Trip" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/idea.png" />
+                           </image>
+                           <rotationAxis>
+                              <Point3D z="10.0" />
+                           </rotationAxis></ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterTimeScene" prefHeight="61.0" prefWidth="207.0" styleClass="button1" stylesheets="@../css/homeScene.css" text="Check Time" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/clock.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#enterMainScene" prefHeight="61.0" prefWidth="207.0" styleClass="button1" stylesheets="@../css/homeScene.css" text="Check Info" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/map.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="26.0" layoutY="66.0" text="Wellington" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="102.0" text="Train Helper " textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="26.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/train.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="207.0" prefHeight="600.0" prefWidth="749.0" style="-fx-background-color: #2F2B43;">
+         <children>
+            <Button layoutX="505.0" layoutY="21.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Masterton" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="297.0" layoutY="552.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Wellington" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="290.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #2bb0ed; -fx-cursor: hand;" text="Johnsonville_Wellington" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="505.0" layoutY="43.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Renall-Street" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font></Button>
+            <Line endX="33.2857666015625" endY="-72.57144165039062" layoutX="479.0" layoutY="480.0" startX="-110.0" startY="-13.000030517578125" stroke="#e05843" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-16.7142333984375" endY="-192.28573608398438" layoutX="529.0" layoutY="410.0" startX="-16.7142333984375" startY="-2.428558349609375" stroke="#e05843" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-110.0830078125" endY="-100.14285278320312" layoutX="462.0" layoutY="554.0" startX="-110.0830078125" startY="-2.0" stroke="#f59d2a" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="26.2857666015625" endY="-64.28573608398438" layoutX="462.0" layoutY="458.0" startX="-110.04150390625" startY="-7.142852783203125" stroke="#f59d2a" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-16.7142333984375" endY="-367.28570556640625" layoutX="505.0" layoutY="393.0" startX="-16.7142333984375" startY="-4.285736083984375" stroke="#f59d2a" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-110.0830078125" endY="-100.14285278320312" layoutX="479.0" layoutY="570.0" startX="-110.0830078125" startY="-18.0" stroke="#e05843" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-110.0830078125" endY="-245.4285888671875" layoutX="467.0" layoutY="554.0" startX="-110.0830078125" startY="-2.0" stroke="#5cb289" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-110.0830078125" endY="-46.000030517578125" layoutX="445.0" layoutY="554.0" startX="-110.0830078125" startY="-2.0" stroke="#d6ea26" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-142.0830078125" endY="-57.285736083984375" layoutX="439.0" layoutY="528.0" startX="-104.0830078125" startY="-18.714324951171875" stroke="#d6ea26" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-104.0830078125" endY="-273.4285888671875" layoutX="401.0" layoutY="486.0" startX="-104.0830078125" startY="-20.285736083984375" stroke="#d6ea26" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-110.0830078125" endY="-32.85711669921875" layoutX="426.0" layoutY="554.0" startX="-110.0830078125" startY="-2.0" stroke="#2bb0ed" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-294.85711669921875" endY="-2.0" layoutX="426.0" layoutY="518.0" startX="-110.0830078125" startY="-2.0" stroke="#2bb0ed" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Line endX="-181.85711669921875" endY="65.0" layoutX="308.0" layoutY="451.0" startX="-181.85711669921875" startY="-115.57144165039062" stroke="#2bb0ed" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+            <Button layoutX="511.0" layoutY="65.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Solway" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="504.0" layoutY="87.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Carterton" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="506.0" layoutY="109.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Matarawa" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="506.0" layoutY="131.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Woodside" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="506.0" layoutY="156.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Featherston" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="507.0" layoutY="182.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Maymorn" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="530.0" layoutY="213.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Upper-Hutt" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="531.0" layoutY="235.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Wallaceville" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="531.0" layoutY="257.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Trentham" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="534.0" layoutY="279.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Heretaunga" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="534.0" layoutY="302.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Silverstream" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="535.0" layoutY="328.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Manor-Park" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="536.0" layoutY="350.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Pomare" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="534.0" layoutY="372.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Taita" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="534.0" layoutY="391.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Wingate" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="509.0" layoutY="411.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Naenae" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="481.0" layoutY="426.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Epuni" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="447.0" layoutY="445.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Waterloo" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="401.0" layoutY="461.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Woburn" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="383.0" layoutY="482.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Ava" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="383.0" layoutY="505.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Petone" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="377.0" layoutY="530.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Ngauranga" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="370.0" layoutY="290.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Melling" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="370.0" layoutY="339.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Western-Hutt" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="203.0" layoutY="454.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Takapu-Road" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="212.0" layoutY="437.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Redwood" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="230.0" layoutY="419.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Tawa" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="220.0" layoutY="402.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Linden" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="208.0" layoutY="383.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Kenepuru" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="218.0" layoutY="361.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Porirua" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="208.0" layoutY="339.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Paremata" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="222.0" layoutY="319.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Mana" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="207.0" layoutY="301.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Plimmerton" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="202.0" layoutY="279.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Pukerua-Bay" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="205.0" layoutY="257.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Paekakariki" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="198.0" layoutY="235.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Paraparaumu" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="210.0" layoutY="213.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Waikanae" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="482.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Crofton-Downs" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="57.0" layoutY="465.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Ngaio" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="448.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Awarua-Street" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="426.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Simla-Crescent" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="52.0" layoutY="408.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Box-Hill" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="383.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Khandallah" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="57.0" layoutY="361.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Raroa" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="339.0" mnemonicParsing="false" onAction="#enterStationScene" styleClass="button2" stylesheets="@../css/homeScene.css" text="Johnsonville" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="100.0" layoutY="528.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #2bb0ed; -fx-cursor: hand;" text="Wellington_Johnsonville" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="146.0" layoutY="479.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #d6ea26; -fx-cursor: hand;" text="Wellington_Waikanae">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="208.0" layoutY="180.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #d6ea26; -fx-cursor: hand;" text="Waikanae_Wellington">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="320.0" layoutY="255.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #5cb289; -fx-cursor: hand;" text="Melling_Wellington">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="469.0" layoutY="517.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #5cb289; -fx-cursor: hand;" text="Wellington_Melling">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="311.0" layoutY="19.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #f59d2a; -fx-cursor: hand;" text="Masterton_Wellington">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="474.0" layoutY="480.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #f59d2a; -fx-cursor: hand;" text="Wellington_Masterton">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="570.0" layoutY="180.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #e05843; -fx-cursor: hand;" text="Upper-Hutt_Wellington">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="436.0" layoutY="556.0" mnemonicParsing="false" onAction="#enterTrainLineScene" style="-fx-background-color: #e05843; -fx-cursor: hand;" text="Wellington_Upper-Hutt">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
