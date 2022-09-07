@@ -178,11 +178,14 @@ public class TrainSystem {
 	public List<Trip> getTripByStationFromExchange(String startName, String endName, Integer time) {
 		Station startStation = stationByName.get(startName);
 		Station endStation = stationByName.get(endName);
+		Integer firstTripArriveTime = 0;
+		Integer secondTripArriveTime = 0;
 		Integer currentArriveTime = 0;
-		Integer maxArriveTime = 0;
-		Integer timeArriveExchange = 0;
+		Integer earliestArriveTime = 0;
 		Trip firstTrip = null;
 		Trip secondTrip = null;
+		Trip firstBestTrip = null;
+		Trip secondBestTrip = null;
 		List<Trip> trips = new ArrayList<Trip>();
 		
 		//Get all stations that the start station can go to
@@ -195,27 +198,21 @@ public class TrainSystem {
 		
 		//Find the fastest trip between start station and exchange station
 		for(String exchangeName: exchange) {
-			Trip trip = getTripByStation(startName, exchangeName, time);
-			currentArriveTime = trip.getArriveTimeForEndStation();
-			if (currentArriveTime > maxArriveTime) {
-				firstTrip = trip;
-				maxArriveTime = currentArriveTime;
+			firstTrip = getTripByStation(startName, exchangeName, time);
+			firstTripArriveTime = firstTrip.getArriveTimeForEndStation();
+			secondTrip = getTripByStation(exchangeName, endName, firstTripArriveTime);
+			secondTripArriveTime = secondTrip.getArriveTimeForEndStation();
+			currentArriveTime = secondTripArriveTime;
+			
+			if (currentArriveTime < earliestArriveTime) {
+				firstBestTrip = firstTrip;
+				secondBestTrip = secondTrip;
+				earliestArriveTime = currentArriveTime;
 			}
 		}
 
-		trips.add(firstTrip);
-		
-		//Find the fastest trip between exchange station and end station
-		for(String exchangeName: exchange) {
-			Trip trip = getTripByStation(exchangeName, endName, maxArriveTime);
-			maxArriveTime = 0;
-			currentArriveTime = trip.getArriveTimeForEndStation();		
-			if (currentArriveTime > maxArriveTime) {
-				secondTrip = trip;
-				maxArriveTime = currentArriveTime;
-			}
-		}
-		trips.add(secondTrip);
+		trips.add(firstBestTrip);
+		trips.add(secondBestTrip);
 		
 		return trips;
 	}
